@@ -93,11 +93,37 @@ def create_a_new_case():
         fp.write(f"# References \n")
         fp.write("---\n")
 
-    with open(os.path.join(root_path, new_case_dir, 'evidences', 'evidence_1.md'), "w") as fp:
-        fp.write(f"# Evidence name\n")
+    with open(os.path.join(root_path, new_case_dir, 'evidences', 'evidence_1_template.md'), "w") as fp:
+        fp.write(f"# Template Statistical Evidence\n")
         fp.write("---\n")
+
+        fp.write("## Reproduction or Simulation\n")
+        fp.write("Where did you get the data, how are you plotting it, What does variable means.\n")
+
+        fp.write("## Observations\n")
         fp.write("A is correlated with B\n")
         fp.write("Here is a plot\n")
+
+        fp.write("## Conclusion\n")
+        fp.write("Your conclusion based on the observation goes here\n")
+
+    with open(os.path.join(root_path, new_case_dir, 'evidences', 'evidence_2_template.md'), "w") as fp:
+        fp.write(f"# Template Empirical Evidence\n")
+        fp.write("---\n")
+        fp.write("## Reproduction or Simulation\n")
+        fp.write("Your reproduction steps goes here\n")
+
+        fp.write("## Experiment\n")
+        fp.write("Your Experimental details on how goes here\n")
+
+        fp.write("## Observations\n")
+        fp.write("What are the observations you are seeing from reproduction, simulation or experiment\n")
+        fp.write("Here is a plot\n")
+        fp.write("Here are the error logs\n")
+        fp.write("Here are the images\n")
+
+        fp.write("## Conclusion\n")
+        fp.write("Your conclusion based on the observation goes here\n")
 
     os.mkdir(os.path.join(root_path, new_case_dir, 'code'))
 
