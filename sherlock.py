@@ -31,7 +31,7 @@ def create_a_new_case():
         {
             'type': 'input',
             'name': 'directory_name',
-            'message': 'Project name: ',
+            'message': 'Directory name: ',
         }
     ]
     answers_4 = prompt(questions_4)
@@ -40,7 +40,7 @@ def create_a_new_case():
         {
             'type': 'input',
             'name': 'title',
-            'message': 'Title: ',
+            'message': 'Case title: ',
         }
     ]
     answers_3 = prompt(questions_3)
