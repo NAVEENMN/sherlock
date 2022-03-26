@@ -157,7 +157,7 @@ def create_a_new_case():
     add_evidence(new_case_dir)
     add_reference(new_case_dir)
 
-    print(f"case {answers_3['title']} created.")
+    print(f"The case {answers_3['title']} created.")
 
 
 def main():
